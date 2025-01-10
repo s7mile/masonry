@@ -1,0 +1,30 @@
+.wrap-grid {
+    display: flex;
+    padding: 0 16px;
+
+    &.wide {
+        .wrap-grid-column {
+            width: 25%;
+        }
+    }
+
+    &.medium {
+        .wrap-grid-column {
+            width: 33.333%;
+        }
+    }
+
+    &.default {
+        .wrap-grid-column {
+            width: 50%;
+        }
+    }
+
+    .wrap-grid-column {
+        margin-left: 15px;
+
+        &:first-child {
+            margin-left: 0;
+        }
+    }
+}
